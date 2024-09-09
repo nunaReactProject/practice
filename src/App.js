@@ -12,7 +12,7 @@ function App() {
     return (
         <div>
             <p>값 : {state}</p>
-            <button onClick={handleClick}>증가</button>
+            <button onClick={handleClick}>증가+</button>
         </div>
     );
 }
