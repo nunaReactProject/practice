@@ -3,9 +3,9 @@ import { useState } from "react";
 // CSS in JS
 
 function App() {
-    const [state, setState] = useState(1);
+    const [state, setState] = useState(0);
     const multiple = () => {
-        setState(state * 2);
+        setState(state * 3);
     };
     return (
         <div>
