@@ -1,6 +1,8 @@
 import { useState } from 'react';
 
 // CSS in JS
+//리커밋
+
 
 function App() {
   const [state, setState] = useState(0);
