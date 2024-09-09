@@ -5,17 +5,23 @@ import { useState } from 'react';
 
 
 function App() {
-  const [state, setState] = useState(0);
-  const minus = ()=>{
-    setState(state-1)
-  }
+    const [state, setState] = useState(0);
 
-  return (
-    <div>
-      <p>값 : {state}</p>
-      <button onClick={minus}>빼기</button>
-    </div>
-  );
+    const handleClick = () => {
+        setState(state + 1);
+    };
+  
+    const minus = ()=>{
+        setState(state-1)
+    };
+
+    return (
+        <div>
+            <p>값 : {state}</p>
+            <button onClick={handleClick}>증가+</button>
+            <button onClick={minus}>빼기</button>
+        </div>
+    );
 }
 
 export default App;
